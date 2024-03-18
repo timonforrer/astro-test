@@ -1,0 +1,9 @@
+---
+export const prerender = false;
+
+const { pagetype, id } = Astro.params;
+---
+
+<pre>
+  {JSON.stringify({ pagetype, id }, null, 2)}
+</pre>
